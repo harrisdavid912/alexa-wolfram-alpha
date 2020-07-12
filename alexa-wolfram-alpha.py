@@ -28,7 +28,7 @@ def lambda_handler(event, context):
     to prevent someone else from configuring a skill that sends requests to
     this function.
     """
-    if (event['session']['application']['applicationId'] !=
+    if (event['session']['application']['applicationId'] !=H58XTL-TU28E8AG55
             os.environ["SKILL_ID"]):
         raise ValueError("Invalid Application ID")
 
